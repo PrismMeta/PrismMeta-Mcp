@@ -1,0 +1,44 @@
+{
+  "name": "prismmeta-mcp-server",
+  "version": "1.0.0",
+  "description": "PrismMeta MCP Server - Connects Claude/VS Code to deployed MCP head service",
+  "main": "index.js",
+  "type": "module",
+  "icon": "icon.jpg",
+  "bin": {
+    "prismmeta-mcp": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "prismmeta",
+    "claude",
+    "ai",
+    "model-context-protocol"
+  ],
+  "author": "PrismMeta",
+  "license": "MIT",
+  "mcp": {
+    "server": {
+      "command": "node",
+      "args": [
+        "index.js"
+      ],
+      "env": {
+        "MCP_HEAD_URL": "https://prismmeta-mcp-head-xnnblyviqq-uc.a.run.app/mcp/jsonrpc"
+      }
+    }
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/vscode": "^1.106.1",
+    "@vscode/vsce": "^3.7.0"
+  }
+}

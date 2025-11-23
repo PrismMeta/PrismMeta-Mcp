@@ -1,0 +1,13 @@
+{
+  "cline.mcpServers": {
+    "prismmeta": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\ronal\\Downloads\\Mindflow\\mcp-server\\index.js"
+      ],
+      "env": {
+        "MCP_HEAD_URL": "https://prismmeta-mcp-head-xnnblyviqq-uc.a.run.app/mcp/jsonrpc"
+      }
+    }
+  }
+}

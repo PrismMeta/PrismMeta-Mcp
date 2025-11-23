@@ -1,0 +1,58 @@
+{
+  "name": "prismmeta-mcp",
+  "displayName": "PrismMeta MCP Server",
+  "description": "Connect to PrismMeta's production MCP server with trust layer, security, and consent management",
+  "version": "1.0.0",
+  "publisher": "prismmeta",
+  "icon": "icon.jpg",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "AI",
+    "Machine Learning",
+    "Data Science"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "claude",
+    "cline",
+    "database",
+    "trust-layer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prismmeta/mcp-server"
+  },
+  "bugs": {
+    "url": "https://github.com/prismmeta/mcp-server/issues"
+  },
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "PrismMeta MCP",
+      "properties": {
+        "prismmeta.mcpHeadUrl": {
+          "type": "string",
+          "default": "https://prismmeta-mcp-head-xnnblyviqq-uc.a.run.app/mcp/jsonrpc",
+          "description": "URL of the PrismMeta MCP head service"
+        }
+      }
+    }
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.22.0"
+  }
+}
