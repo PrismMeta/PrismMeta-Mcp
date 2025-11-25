@@ -29,7 +29,7 @@
         "index.js"
       ],
       "env": {
-        "MCP_HEAD_URL": "https://prismmeta-mcp-head-xnnblyviqq-uc.a.run.app/mcp/jsonrpc"
+        "MCP_HEAD_URL": "https:\\"
       }
     }
   },
